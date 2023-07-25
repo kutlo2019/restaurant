@@ -1,1 +1,3 @@
-console.log("Ooops!! Poops!!")
+import loadHomePage from "./page-load";
+
+loadHomePage();

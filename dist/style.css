@@ -33,7 +33,7 @@ html, body {
     background-attachment: fixed;
 }
 
-.cool-bg {
+.content-wrapper {
     width: 100%;
     margin: auto;
     padding: 0 10%;
@@ -42,7 +42,7 @@ html, body {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 2rem 0;
 }
 
 .nav-links {

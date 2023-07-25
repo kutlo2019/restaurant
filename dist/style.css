@@ -1,8 +1,75 @@
-html, body {
-    width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
 }
 
-.content {
+html, body {
+    width: 100%;
+    color: #fff;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#content {
+    width: 100%;
+    background: url(../src/red-wine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cool-bg {
     width: 80%;
     margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.banner {
+    width: 50%;
+    height: 47vw;
+    margin: 60px auto;
+    background-color: rgba(13,12,17, 0.98);
+    border: 1px solid #fff;
+    border-radius: 50% 50% 0 0;
+    text-align: center;
+    padding-top: 10%;
+}
+
+button {
+    padding: 13px 21px; 
+    color: #fff;
+    background-color: rgba(13,12,17, 0.98);
+    border: 1px solid #fff;
+    margin-top: 10%;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20%;
+    margin-top: 8%;
+}
+
+p {
+    margin: 0;
+}
+
+.about {
+    display: flex;
+}
+
+.header, .text {
+    width: 50%;
 }

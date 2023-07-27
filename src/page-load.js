@@ -7,12 +7,7 @@ import Food from './img/good-food.jpg';
 import Nem from './img/nem.jpg'; 
 import RedWine from './img/red-wine.jpg';
 
-export default function loadHomePage() {
-
-    // create the content wrapper
-    const contentWrap = document.createElement('div');
-    contentWrap.classList.add('content-wrapper');
-
+function createNavigation() {
     // create navigation then add logo and links
     const nav = document.createElement('nav');
 
@@ -32,6 +27,17 @@ export default function loadHomePage() {
 
     nav.appendChild(logo);
     nav.appendChild(navLinkWrap);
+
+    return nav;
+}
+
+function loadHomePage() {
+
+    // create the content wrapper
+    const contentWrap = document.createElement('div');
+    contentWrap.classList.add('content-wrapper');
+
+    const nav = createNavigation();
     contentWrap.appendChild(nav)
 
     // create banner and add text
@@ -121,4 +127,8 @@ export default function loadHomePage() {
     const contentDiv = document.getElementById('content');
     contentDiv.style.backgroundImage = `url(${RedWine})` 
     contentDiv.appendChild(contentWrap);
+};
+
+export {
+    loadHomePage,
 };
